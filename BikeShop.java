@@ -462,6 +462,9 @@ public class BikeShop {
 		Scanner input = null;
 		try{
 			boolean flag = true;
+
+			input = new Scanner(System.in);
+			int choice = 0;
    
 			while(flag){
 				System.out.println("\n1. Display available bikes\n" +
@@ -477,8 +480,7 @@ public class BikeShop {
 									"11. Write printable invoice to file\n" +
 									"12. Quit"); 
 	
-				input = new Scanner(System.in);
-				int choice = 0;
+
    
 				System.out.println("Enter your choice (1 - 12): ");
 				choice = input.nextInt();
